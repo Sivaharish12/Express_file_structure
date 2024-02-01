@@ -3,12 +3,12 @@ const router=express.Router()
 
 const Number_Controller=require('../Controller/number_controller')
 
-router.get('/add/:id1/:id2',Number_Controller.Addfunction);
+router.post('/add',Number_Controller.Addfunction);
 
-router.get('/sub/:id1/:id2',Number_Controller.SubtractFunction);
+router.post('/sub',Number_Controller.SubtractFunction);
 
-router.get('/mul/:id1/:id2',Number_Controller.MultiplicationFunction);
+router.post('/mul',Number_Controller.MultiplicationFunction);
 
-router.get('/div/:id1/:id2',Number_Controller.DivisionFunction);
+router.post('/div',Number_Controller.DivisionFunction);
 
 module.exports=router;
